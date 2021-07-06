@@ -45,7 +45,7 @@ export default {
         /** Replacement text for FPlaceholder. */
         replacementText: {
             type: String,
-            default: '10,000.00 FTM',
+            default: '10,000.00 ACE',
         },
         /** Number of decimal places. If not set (-1), token decimal places will be taken. */
         decimals: {

@@ -13,7 +13,7 @@ import { appStructureTree } from '@/app-structure.js';
 import { getUniqueId } from '@/utils';
 
 export default {
-    name: 'WrapFTM',
+    name: 'WrapACE',
 
     components: { FViewTransition },
 
@@ -27,7 +27,7 @@ export default {
         ...mapGetters(['currentAccount']),
 
         viewsStructure() {
-            const node = appStructureTree.serialize(appStructureTree.get('wrap-ftm'));
+            const node = appStructureTree.serialize(appStructureTree.get('wrap-ACE'));
 
             return node ? [JSON.parse(node)] : [];
         },
