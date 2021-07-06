@@ -1,6 +1,6 @@
 const appConfig = {
     // app title
-    name: 'fUNI',
+    name: 'Acent',
     // app description
     description: 'fUNI',
     // app keywords

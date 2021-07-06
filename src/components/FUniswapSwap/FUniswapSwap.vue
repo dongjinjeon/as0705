@@ -524,7 +524,7 @@ export default {
                     if (params.tokena) {
                         fromToken = TokenPairs.findToken(pairs[0].tokens, params.tokena);
                     } else {
-                        fromToken = TokenPairs.findTokenBySymbol(pairs[0].tokens, 'WFTM') || pairs[0].tokens[0];
+                        fromToken = TokenPairs.findTokenBySymbol(pairs[0].tokens, 'WACE') || pairs[0].tokens[0];
                     }
                 }
             }
@@ -921,7 +921,7 @@ export default {
         onSubmit() {
             const { fromToken } = this;
             const { toToken } = this;
-            // const ftmTokens = ['FTM', 'WFTM'];
+            // const ftmTokens = ['ACE', 'WACE'];
             const params = {
                 fromValue: this.fromValue_,
                 toValue: this.toValue_,

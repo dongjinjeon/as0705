@@ -38,7 +38,7 @@ export default {
                     url: {
                         name: 'funiswap-wrap-ftm',
                     },
-                    title: 'Wrap FTM',
+                    title: 'Wrap ACE',
                 },
             ],
         };

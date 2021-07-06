@@ -279,20 +279,20 @@ export default {
             const account = address ? await this.$fWallet.getBalance(address, false, true) : { balance: '0x0' };
             const ftmToken = {
                 address: '0xfc00face00000000000000000000000000000000',
-                symbol: 'FTM',
+                symbol: 'ACE',
                 name: 'Fantom',
                 isActive: true,
                 decimals: 18,
-                price: wFTM.price,
-                priceDecimals: wFTM.priceDecimals,
+                price: wACE.price,
+                priceDecimals: wACE.priceDecimals,
                 availableBalance: account.balance,
                 allowance: '0x0',
                 logoUrl: 'https://cryptologos.cc/logos/fantom-ftm-logo.svg?v=003',
             };
             $defi._setTokenDecimals(ftmToken);
 
-            this.fromToken = ftmToken;
-            this.toToken = wFTM;
+            this.fromToken = ACEToken;
+            this.toToken = wACE;
 
             this.setPerPrice();
         },
@@ -504,7 +504,7 @@ export default {
         onSubmit() {
             const { fromToken } = this;
             const { toToken } = this;
-            // const ftmTokens = ['FTM', 'WFTM'];
+            // const ftmTokens = ['ACE', 'WACE'];
             const params = {
                 fromValue: this.fromValue,
                 toValue: this.toValue,

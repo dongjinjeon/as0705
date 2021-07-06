@@ -61,9 +61,9 @@ export default {
 
             if (token) {
                 switch (token.symbol) {
-                    case 'FTM':
+                    case 'ACE':
                         return ftmIcon;
-                    case 'WFTM':
+                    case 'WACE':
                         return wftmIcon;
                     case 'FUSD':
                         return fusdIcon;
